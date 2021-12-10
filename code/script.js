@@ -12,7 +12,6 @@ const buttonHoldElement = document.querySelector(".btn--hold");
 //Selecting elements for the Current score of each player
 const currScorePlayer0 = document.querySelector("#current--0");
 const currScorePlayer1 = document.querySelector("#current--1");
-
 //starting conditions
 scorePlayer0Element.textContent = "0";
 scorePlayer1Element.textContent = "0";
@@ -58,6 +57,7 @@ const gameOver = () => {
     currentScore = 0;
     document.querySelector(`#current--${activePlayer}`).textContent = currentScore;
     diceElement.classList.add("hidden");
+    document.querySelector(`.winner--${activePlayer}`).classList.remove("hide-winner");
 }
 
 //Function that is called to reset the game
@@ -72,6 +72,7 @@ const initialization = () => {
     keepPlaying = true;
     diceElement.classList.add("hidden");
     document.querySelector(`.player--${activePlayer}`).classList.remove("player--winner");
+    document.querySelector(`.winner--${activePlayer}`).classList.add("hide-winner");
     activePlayer = 0;
     document.querySelector(`.player--${activePlayer}`).classList.add("player--active");
     document.querySelector(`.player--1`).classList.remove("player--active");

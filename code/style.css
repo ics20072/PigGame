@@ -169,3 +169,13 @@ main {
 .hidden {
   display: none;
 }
+
+.winner--0, .winner--1 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.hide-winner {
+  visibility: hidden;
+}
