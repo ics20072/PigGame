@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 * {
   margin: 0;
@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 400;
   height: 100vh;
   color: #333;
@@ -100,7 +100,8 @@ main {
 }
 
 /* ABSOLUTE POSITIONED ELEMENTS */
-.goal, .btn {
+.goal,
+.btn {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -170,7 +171,8 @@ main {
   display: none;
 }
 
-.winner--0, .winner--1 {
+.winner--0,
+.winner--1 {
   font-size: 30px;
   color: white;
   text-align: center;
